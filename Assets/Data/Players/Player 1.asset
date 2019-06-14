@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa88daed9cb78d44aa50a3713d8caba, type: 3}
+  m_Name: Player 1
+  m_EditorClassIdentifier: 
+  playerName: Iara
+  initialLife: 20
+  initialMana: 15
+  InitialDeck: {fileID: 11400000, guid: 5e8d2778b68b7304f9185f7c5d0d09d7, type: 2}
+  handCardLogic: {fileID: 11400000, guid: dfefa18f7555d434da54104f1659d29e, type: 2}
+  fieldCardLogic: {fileID: 11400000, guid: 76dc8f30fc9f90a439dd3dd39b5de656, type: 2}
+  deckCardLogic: {fileID: 11400000, guid: 1e791028849329546a4c07752086bfbf, type: 2}
+  cemiteryCardLogic: {fileID: 11400000, guid: 63b9ff415ab1a2b40bd3959f1cde61fc, type: 2}
+  normalState: {fileID: 11400000, guid: 5ab1d68b1f133404dbd1ccf0aabf2c85, type: 2}
+  portrait: {fileID: 21300000, guid: f3cb3d697fff0da4c89078a52b47b4ed, type: 3}
