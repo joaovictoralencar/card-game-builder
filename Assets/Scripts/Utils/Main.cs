@@ -30,6 +30,8 @@ public class Main : MonoBehaviour
     }
     public void ChangePlayer()
     {
+        currentPlayer.StopAllCoroutines();
+        currentPlayer.State = currentPlayer.stats.normalState;
         if (currentPlayer == player2)
         {
             currentPlayer = player1;
@@ -38,6 +40,8 @@ public class Main : MonoBehaviour
         {
             currentPlayer = player2;
         }
+        currentPlayer.StopAllCoroutines();
+        currentPlayer.State = currentPlayer.stats.normalState;
         UpdateUI();
     }
 

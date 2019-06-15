@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName="Card Asset/New Logic/New CemiteryCardLogic")]
-public class CemiteryCardLogic : Logic
+[CreateAssetMenu(menuName="Card Asset/New Logic/New CemeteryCardLogic")]
+public class CemeteryCardLogic : Logic
 {
     public override void OnClick(Card card)
     {

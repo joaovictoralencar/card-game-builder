@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43a5b93f8755181469d358be7fc4c104, type: 3}
-  m_Name: Cemitery Card Logic
+  m_Script: {fileID: 11500000, guid: 02e928feaad05d44b9104d6c4ef3fb27, type: 3}
+  m_Name: Cemetery Card Logic
   m_EditorClassIdentifier: 

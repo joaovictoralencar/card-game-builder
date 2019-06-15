@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public PlayerStats stats;
     PlayerState state;
-    public Transform handTransform, deckTransform, fieldTransform, cemiteryTransform;
+    public Transform handTransform, deckTransform, fieldTransform, cemeteryTransform;
     public Text lifeText,manaText, playerNameText;
 
     string playerName;
@@ -14,15 +14,15 @@ public class Player : MonoBehaviour
     int life, mana;
     bool canAttack, canBeAttacked, canUseEffect;
     Deck deck;
-    List<Card> deckCards, handCards, fieldCards, cemiteryCards;
+    List<Card> deckCards, handCards, fieldCards, cemeteryCards;
     public Deck Deck { get => deck; set => deck = value; }
     public bool CanAttack { get => canAttack; set => canAttack = value; }
     public bool CanBeAttacked { get => canBeAttacked; set => canBeAttacked = value; }
     public bool CanUseEffect { get => canUseEffect; set => canUseEffect = value; }
     public int Life { get => life; set => life = value; }
     public int Mana { get => mana; set => mana = value; }
-    public List<Card> CemiteryCards { get => cemiteryCards; set => cemiteryCards = value; }
-    public List<Card> CemiteryCards1 { get => cemiteryCards; set => cemiteryCards = value; }
+    public List<Card> CemeteryCards { get => cemeteryCards; set => cemeteryCards = value; }
+    public List<Card> CemeteryCards1 { get => cemeteryCards; set => cemeteryCards = value; }
     public List<Card> DeckCards { get => deckCards; set => deckCards = value; }
     public List<Card> HandCards { get => handCards; set => handCards = value; }
     public PlayerState State { get => state; set => state = value; }
@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
             deckCards = new List<Card>();
             handCards = new List<Card>();
             fieldCards = new List<Card>();
-            CemiteryCards = new List<Card>();
+            CemeteryCards = new List<Card>();
             //set the player to be able to attack
             canAttack = true;
             state = stats.normalState;
@@ -140,14 +140,14 @@ public class Player : MonoBehaviour
             }
         }
     }
-    public void KillCard(Card card)//Kills a field's card by putting on the cemitery
+    public void KillCard(Card card)//Kills a field's card by putting on the cemetery
     {
         if (fieldCards.Contains(card))
         {
-            card.transform.SetParent(cemiteryTransform);//Moves the card physically to the cemitery
-            CemiteryCards.Add(card);
+            card.transform.SetParent(cemeteryTransform);//Moves the card physically to the cemetery
+            CemeteryCards.Add(card);
             fieldCards.Remove(card);//Removes the card from the field
-            card.CurrentLogic = stats.cemiteryCardLogic;//changes the logic
+            card.CurrentLogic = stats.cemeteryCardLogic;//changes the logic
             card.CreateCard(card.Stats);
         }
     }

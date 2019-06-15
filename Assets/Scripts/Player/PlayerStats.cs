@@ -10,7 +10,7 @@ public class PlayerStats : ScriptableObject
     public HandCardLogic handCardLogic;
     public FieldCardLogic fieldCardLogic;
     public DeckCardLogic deckCardLogic;
-    public CemiteryCardLogic cemiteryCardLogic;
+    public CemeteryCardLogic cemeteryCardLogic;
     public PlayerState normalState;
     public Sprite portrait;
 
