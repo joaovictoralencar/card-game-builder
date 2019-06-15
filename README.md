@@ -47,7 +47,9 @@ If you plan to use the scripts and objects I made, you just need to:
 3. Add 2 players using the prefab
 4. Add the players stats to the 2 players
 5. Set the players reference into the Main script
-6. Run 
+6. Create your cards using the Editor
+7. Add your cards to the ResourcesManager (Data/Resources)
+8. Run 
 
 ## Diferent Logics
 Choose how your card is going to behave according to its logic. The logics are diferent if the card is in a diferent position. Ex: field, deck, hand...
