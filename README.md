@@ -1,23 +1,23 @@
-#Card Game Builder
+# Card Game Builder
 
 The idea of this project came about when I had to develop a card game using Unity. After a brief research, I realized that there are no card game plugins in the Unity Assets store, at least not for free. So I decided to make a generic plugin that could help some developers make their own card games. You are free to make all the changes you need to design your game.
 
-##Features
+## Features
 
-###- Strong use of Scriptable Objects (Create classes instances using the Editor)
-###- Pack of prefabs 
-###- Example Scene
-###- Create Cards easily by name
-###- Create Players easily
-###- Deck, Hand, Field and 
-###- Attack
-###- Drop Card
-###- Draw Card
-###- Kill Card
-###- Player State
-###- Diferent logics to cards according to their positions in game
+### - Strong use of Scriptable Objects (Create classes instances using the Editor)
+### - Pack of prefabs 
+### - Example Scene
+### - Create Cards easily by name
+### - Create Players easily
+### - Deck, Hand, Field and 
+### - Attack
+### - Drop Card
+### - Draw Card
+### - Kill Card
+### - Player State
+### - Diferent logics to cards according to their positions in game
 
-##How to use
+## How to use
 You can see the Example Scene to have an idea of how the plugin works. I advise to you to use the Data folder because this folder has a lot of usable objects.
 
 If you don't want to start from zero, follow this steps:
@@ -39,7 +39,7 @@ To create instances on Editor: Right click on Project Tab/Create/Card Assets/...
 13 - Go to Main and set the 2 players and the current player
 14 - Run
 
-##Using the actual content
+## Using the actual content
 
 If you plan to use the scripts and objects I made, you just need to:
 1 - Create a Canvas to your scene
@@ -49,9 +49,9 @@ If you plan to use the scripts and objects I made, you just need to:
 5 - Set the players reference into the Main script
 6 - Run 
 
-##Diferent Logics
+## Diferent Logics
 Choose how your card is going to behave according to its logic. The logics are diferent if the card is in a diferent position. Ex: field, deck, hand...
 
-##Attack, Drop, Draw and Kill
+## Attack, Drop, Draw and Kill
 
 Inside the Player script, you'll find those functions. You may change then as you wish to fit into your game logic. If you need more interactions events  to your card, just add then at the event trigger component attatched in the card prefab.
